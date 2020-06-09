@@ -1,0 +1,30 @@
+package pk2;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class ListBook {
+
+	public static ArrayList<Books> inputData() {
+		ArrayList<Books> list = new ArrayList<Books>();
+		Scanner input = new Scanner(System.in);
+		int n = Integer.parseInt(input.nextLine());
+		for (int i = 0; i < n; i++) {
+			System.out.println("Tên tin tức: ");
+			String name = input.nextLine();
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+			String year = sdf.format(new Date());
+			Books books = new Books(i, name, year)
+		}
+		return list;
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

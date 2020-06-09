@@ -1,0 +1,31 @@
+package pk1;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
+
+public class ListNews {
+
+	public static ArrayList<News> inputData() {
+		ArrayList<News> list = new ArrayList<News>();
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Nhập số tin tức");
+		int n = Integer.parseInt(input.nextLine());
+		for (int i = 0; i < n; i++) {
+			System.out.println("Tên tin tức");
+			String name = input.nextLine();
+
+			SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
+			String dateCreate = sdf.format(new Date());
+
+		}
+		return list;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

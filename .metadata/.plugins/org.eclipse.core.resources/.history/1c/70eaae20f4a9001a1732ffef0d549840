@@ -1,0 +1,14 @@
+package pk1;
+
+import java.util.ArrayList;
+
+public class ListNews {
+
+	public static ArrayList<News> inputData(){
+		ArrayList<News>  list = new ArrayList<News>();
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}
